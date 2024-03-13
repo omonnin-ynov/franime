@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Franime.controller.UpdateAnimeController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="10">
+        <Label text="Modifier les informations de l'anime"/>
+        <TextField fx:id="nameTextField" promptText="Nom de l'anime"/>
+        <TextField fx:id="typeTextField" promptText="Type"/>
+        <TextField fx:id="genreTextField" promptText="Genre"/>
+        <TextField fx:id="episodeTextField" promptText="Nombre d'épisodes"/>
+        <TextField fx:id="ratingTextField" promptText="Note"/>
+        <TextArea fx:id="descriptionTextArea" promptText="Description"/>
+        <!-- Ajoutez d'autres champs selon vos besoins -->
+
+        <Button fx:id="updateButton" text="Mettre à jour" onAction="#handleUpdateButtonAction"/>
+    </VBox>
+
+</AnchorPane>
+

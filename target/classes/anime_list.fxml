@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Franime.controller.AnimeListController" style="-fx-background-color: #f0f0f0;">
+
+    <ListView fx:id="animeListView" prefHeight="300" prefWidth="400" layoutX="10" layoutY="60" style="-fx-background-color: #ffffff; -fx-border-color: #e0e0e0; -fx-border-width: 1px;"/>
+
+    <Button onAction="#openAddAnimeForm" text="Ajouter un anime" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10" style="-fx-background-color: #4caf50; -fx-text-fill: white;"/>
+    <Button layoutX="443.0" layoutY="43.0" onAction="#openUpdateAnimeForm" text="Modifier Anime" style="-fx-background-color: #2196f3; -fx-text-fill: white;" />
+
+    <HBox spacing="10" layoutX="10" layoutY="10">
+        <TextField fx:id="searchTextField" promptText="Rechercher un anime" style="-fx-background-color: #ffffff; -fx-border-color: #e0e0e0; -fx-border-width: 1px;"/>
+        <Button text="Rechercher" onAction="#searchAnime" style="-fx-background-color: #ff9800; -fx-text-fill: white;" />
+    </HBox>
+
+</AnchorPane>
